@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivilExpertos.com – más que una consulta</title>
+    <link rel="stylesheet" href="estilo.css">
+  <!-- TailwindCSS vía CDN : se compila al vuelo y basta para CodePen -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body class="text-gray-800 font-sans">
+
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <a href="#inicio" class="text-xl sm:text-2xl font-semibold text-orange-600 whitespace-nowrap">
+        CivilExpertos.com
+        <span class="block sm:inline italic text-gray-600 text-base sm:text-lg">más que una consulta</span>
+      </a>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#inicio" class="hover:text-orange-600">Inicio</a>
+        <a href="#membresias" class="hover:text-orange-600">Membresías</a>
+        <a href="#unete" class="hover:text-orange-600">Únete al equipo de consultores</a>
+        <a href="#acerca" class="hover:text-orange-600">Acerca de</a>
+        <a href="#mas-buscado" class="hover:text-orange-600">Más buscado</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== INICIO ===== -->
+  <section id="inicio" class="py-20 bg-gradient-to-b from-orange-50 to-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">Nuestro modelo de negocio</h2>
+      <p class="mb-6 text-lg leading-relaxed">
+        En CivilExpertos apostamos por la democratización del conocimiento técnico.
+        Por solo <span class="font-semibold">S/ 40 al mes</span> obtienes <strong>consultas ilimitadas</strong>
+        con especialistas de ingeniería civil, arquitectura y gestión.
+      </p>
+
+      <div class="bg-orange-100 border-l-4 border-orange-500 p-4 rounded-lg mb-10">
+        <p class="font-medium">
+          ¡Promoción de lanzamiento! Suscríbete hoy y recibe una clase magistral sobre gestión de proyectos de regalo.
+        </p>
+      </div>
+
+      <!-- Testimonios -->
+      <h3 class="text-2xl font-semibold mb-6">Testimonios</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div class="border shadow-sm hover:shadow-md transition p-6 rounded">
+          <p class="italic mb-4">“Gracias a CivilExpertos pude resolver, en minutos, un problema de pandeo lateral que complicaba mi proyecto de 12 pisos. ¡La membresía se paga sola!”</p>
+          <p class="text-sm font-medium text-orange-600">— Ing. Camila Rivas – Estructural</p>
+        </div>
+        <div class="border shadow-sm hover:shadow-md transition p-6 rounded">
+          <p class="italic mb-4">“Hice más de 30 consultas el mes pasado sin pagar extra. La rapidez y profundidad de cada respuesta superaron mis expectativas.”</p>
+          <p class="text-sm font-medium text-orange-600">— Arq. Luis Soto – Usuario Premium</p>
+        </div>
+        <div class="border shadow-sm hover:shadow-md transition p-6 rounded">
+          <p class="italic mb-4">“Además de ayudar, genero ingresos constantes. El sistema de preguntas virales me motivó a compartir todo mi conocimiento.”</p>
+          <p class="text-sm font-medium text-orange-600">— Ing. Rafael Córdova – Consultor</p>
+        </div>
+      </div>
+
+      <!-- Beneficios -->
+      <h3 class="text-2xl font-semibold mb-4">Beneficios exclusivos</h3>
+      <ul class="space-y-3 mb-12">
+        <li class="flex items-start"><span class="text-orange-500 font-bold mr-2">✔</span> Consultores especialistas a tu servicio: estructurales, geotécnicos, viales, hidráulicos, de gestión, arquitectos, urbanistas y maestros de obra.</li>
+        <li class="flex items-start"><span class="text-orange-500 font-bold mr-2">✔</span> Califica a tu consultor: si la respuesta no te convence, ¡otro especialista tomará el relevo!</li>
+        <li class="flex items-start"><span class="text-orange-500 font-bold mr-2">✔</span> ¡Gana dinero con nosotros! Por cada 1 000 vistas de tu consulta recibes un <em>bono de pregunta viral</em>.</li>
+        <li class="flex items-start"><span class="text-orange-500 font-bold mr-2">✔</span> Cancela cuando quieras: sin contratos largos ni penalidades.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== MEMBRESÍAS ===== -->
+  <section id="membresias" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">Planes de membresía</h2>
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <!-- FreeExperience -->
+        <div class="border shadow-sm hover:shadow-md transition p-8 rounded">
+          <h3 class="text-2xl font-semibold text-gray-700 mb-4">FreeExperience</h3>
+          <p class="mb-6">Realiza <strong>1 consulta cada 3 días</strong> compartiendo el enlace de la página. Ideal para usuarios ocasionales.</p>
+          <ul class="list-disc pl-5 space-y-2 mb-6 text-sm">
+            <li>Acceso al foro público</li>
+            <li>Historial de preguntas</li>
+            <li>Soporte por email</li>
+          </ul>
+          <button disabled class="w-full border py-2 rounded opacity-50 cursor-not-allowed">Actual en uso</button>
+        </div>
+        <!-- PremiumMembership -->
+        <div class="border-2 border-orange-400 shadow-lg p-8 rounded">
+          <h3 class="text-2xl font-semibold text-orange-600 mb-4">PremiumMembership</h3>
+          <p class="mb-6"><span class="text-3xl font-bold">S/ 40</span><span class="text-sm text-gray-600">/mes</span></p>
+          <ul class="list-disc pl-5 space-y-2 mb-6 text-sm">
+            <li>Consultas ilimitadas</li>
+            <li>Califica a tu consultor</li>
+            <li>Participa en bonos por pregunta viral</li>
+            <li>Atención prioritaria 24 / 7</li>
+          </ul>
+          <button class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition">¡Suscribirme!</button>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <h3 class="text-2xl font-semibold mb-6">Inscríbete ahora</h3>
+      <form class="grid md:grid-cols-2 gap-6">
+        <input placeholder="Nombre completo" class="border p-3 rounded" required>
+        <input placeholder="Domicilio" class="border p-3 rounded" required>
+        <input placeholder="Número de tarjeta" class="border p-3 rounded" required>
+        <input placeholder="Código CSV" class="border p-3 rounded" required>
+        <div class="flex items-center space-x-2 col-span-2">
+          <input type="checkbox" id="tyc" class="h-4 w-4" required>
+          <label for="tyc" class="text-sm">Acepto términos y condiciones</label>
+        </div>
+        <button type="submit" class="col-span-2 bg-orange-600 text-white py-2 rounded hover:bg-orange-700 transition">Finalizar suscripción</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== ÚNETE AL EQUIPO ===== -->
+  <section id="unete" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">Únete al equipo de consultores</h2>
+      <ol class="list-decimal pl-6 space-y-4 text-lg mb-12">
+        <li>Enviar tu CV a <a class="text-orange-600 underline" href="mailto:mperaltanavarro@gmail.com">civil-expertos@gmail.com</a> para validar estudios y experiencia.</li>
+        <li>Elegir hasta 3 especialidades (estructural, urbanista, geotécnico, etc.).</li>
+        <li>Confirmar la categorización otorgada por PeraltaAsesores según tu trayectoria académica y profesional.</li>
+        <li>Brindar la cuenta o medio de depósito donde recibirás tus pagos por respuesta.</li>
+        <li>Aceptar términos y condiciones: responder ≥2 preguntas diarias, mantener respuestas abiertas y participar en monitoreos de calidad.</li>
+      </ol>
+      <a href="mailto:mperaltanavarro@gmail.com?subject=Quiero%20ser%20consultor%20CivilExpertos" class="bg-orange-600 text-white py-3 px-6 rounded hover:bg-orange-700 transition">Postular ahora</a>
+    </div>
+  </section>
+
+  <!-- ===== ACERCA DE ===== -->
+  <section id="acerca" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6">Acerca de nosotros</h2>
+      <p class="mb-4 text-lg">
+        Nuestra misión es conectar a todos los profesionales y estudiantes de la construcción con especialistas de primer nivel,
+        fomentando el aprendizaje continuo y la innovación abierta.
+      </p>
+      <p class="mb-8 text-lg">
+        Valores: <strong>Calidad • Colaboración • Transparencia • Innovación</strong>.<br>
+        Objetivo: convertirnos en la plataforma de referencia para resolver dudas técnicas en Hispanoamérica.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+        <img src="https://i.postimg.cc/Wz69KbXk/CONSULTOR-A-EN-INGENIER-A-CIVIL-Y-PROYECTOS-INMOBILIARIOS-01.jpg" alt="Equipo CivilExpertos" class="w-full h-56 object-cover rounded-lg shadow">
+        <img src="https://i.postimg.cc/G2Z2NbHd/Desarrollo-De-Proyectos.jpg" alt="Ingeniero con polo de CivilExpertos" class="w-full h-56 object-cover rounded-lg shadow">
+        <img src="https://i.postimg.cc/MT4tX3pd/congreso-nacional-ingenieria-de-consulta-2024-img1.jpg" alt="Reunión de especialistas" class="w-full h-56 object-cover rounded-lg shadow">
+      </div>
+
+      <h3 class="text-2xl font-semibold mb-4">Nuestro eslogan</h3>
+      <p class="italic text-orange-600 text-xl mb-8">más que una consulta</p>
+
+      <h3 class="text-2xl font-semibold mb-4">Fundadores</h3>
+      
+       
+      <p>Plataforma creada por <strong>Grupo 1 </strong> el curso de Gestión de la Innovación. Su pasión por compartir conocimiento dio origen a CivilExpertos.</p>
+   
+    <p> <strong>Peralta Manarro Manuel</strong> 
+    <p> <strong>Reyes Morales Jesus </strong> 
+    <p> <strong>Rivas Quispe Gabriel</strong> 
+    <p> <strong>Pachas Valencia Franco</strong> 
+
+    </div>
+  </section>
+
+  <!-- ===== MÁS BUSCADO ===== -->
+  <section id="mas-buscado" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10">Preguntas más virales</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Preguntas (col 1) -->
+        <div>
+          <div class="mb-6 p-5 border rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-start mb-2">
+              <h4 class="font-semibold">¿Cómo dimensionar una losa aligerada de 25 m de luz?</h4>
+              <button onclick="addLike(0)" class="flex items-center space-x-1 text-orange-600 text-sm">
+                <span>👍</span><span id="like0">200</span>
+              </button>
+            </div>
+            <p class="text-xs text-gray-500">#1 en tendencias</p>
+          </div>
+          <div class="mb-6 p-5 border rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-start mb-2">
+              <h4 class="font-semibold">Método práctico para estimar asentamientos en cimentaciones profundas</h4>
+              <button onclick="addLike(1)" class="flex items-center space-x-1 text-orange-600 text-sm">
+                <span>👍</span><span id="like1">250</span>
+              </button>
+            </div>
+            <p class="text-xs text-gray-500">#2 en tendencias</p>
+          </div>
+          <div class="mb-6 p-5 border rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-start mb-2">
+              <h4 class="font-semibold">¿Cómo optimizar el diseño de un pavimento rígido en costa norte?</h4>
+              <button onclick="addLike(2)" class="flex items-center space-x-1 text-orange-600 text-sm">
+                <span>👍</span><span id="like2">211</span>
+              </button>
+            </div>
+            <p class="text-xs text-gray-500">#3 en tendencias</p>
+          </div>
+        </div>
+
+        <!-- Relacionadas (col 2) -->
+        <div>
+          <div class="mb-6 p-5 border border-dashed rounded-lg">
+            <h5 class="font-medium mb-2">Relacionadas con “¿Cómo dimensionar una losa…?”</h5>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>¿Qué armadura mínima exige la norma peruana para losas macizas?</li>
+              <li>¿Cuál es la relación f'c–E para concretos de alta resistencia?</li>
+            </ul>
+          </div>
+          <div class="mb-6 p-5 border border-dashed rounded-lg">
+            <h5 class="font-medium mb-2">Relacionadas con “Método práctico para estimar…”</h5>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>Comparación entre métodos Terzaghi y Schmertmann</li>
+              <li>Influencia del preconsolidado en arcillas blandas limeñas</li>
+            </ul>
+          </div>
+          <div class="mb-6 p-5 border border-dashed rounded-lg">
+            <h5 class="font-medium mb-2">Relacionadas con “¿Cómo optimizar el diseño…”</h5>
+            <ul class="list-disc pl-5 text-sm space-y-1">
+              <li>Coeficiente de transferencia de carga recomendado por AASHTO 93</li>
+              <li>Ventajas de usar fibras sintéticas en juntas serradas</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Contenedor general con margen -->
+<div class="max-w-4xl mx-auto px-6">
+
+  <!-- Cuadro de Comentarios  
+  <div class="mt-10" >
+    <h3 class="text-2xl font-semibold mb-4">Consultas</h3>
+    
+    <!-- Lista de comentarios -->
+    <div id="commentsList" class="space-y-6 mb-6">
+      <!-- Comentarios se insertan aquí -->
+    </div>
+
+    <!-- Formulario de nuevo comentario -->
+    <div class="flex items-start space-x-3">
+      <img src="https://i.postimg.cc/qMrMWJkM/Captura-de-pantalla-2025-05-26-223632.png" alt="Ingeniero" class="w-10 h-10 rounded-full border border-gray-300">
+      <div class="flex-1">
+        <textarea
+          id="commentInput"
+          rows="2"
+          placeholder="Agrega una consulta para que un especialista te responda "
+          class="w-full p-3 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
+        ></textarea>
+        <div class="flex justify-end mt-2">
+          <button
+            onclick="addComment()"
+            class="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 transition"
+          >
+            Comentar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-800 text-gray-200 py-10">
+    <div class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 gap-6 text-sm">
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Contacto</h4>
+        <p>Email : <a href="mailto:manuelalejandroperaltanavarro@gmail.com" class="underline">civil_expertos@gmail.com</a></p>
+        <p>Teléfono / WhatsApp : <a href="tel:+51907846615" class="underline">907 846 615</a></p>
+        <p>Ubicación : Calle Yungay 206 - Magdealena del Mar</p>
+      </div>
+      <div class="flex items-end sm:justify-end">
+        <p class="italic">Civil-Expertos © 2025. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JS Likes ===== -->
+  <script>
+    const likes = [200, 250, 100];
+    function addLike(idx) {
+      likes[idx] += 1;
+      document.getElementById('like'+idx).innerText = likes[idx];
+    }
+  </script>
+  <!-- Chat Flotante -->
+
+   <!-- Botón flotante para abrir/cerrar el chat -->
+<button
+  id="toggleChat"
+  class="fixed bottom-4 right-4 w-14 h-14 rounded-full bg-blue-600 text-white text-2xl flex items-center justify-center shadow-lg hover:bg-blue-700 z-50"
+  onclick="toggleChat()"
+>
+  💬
+</button>
+
+<div id="chatContainer" class="hidden fixed bottom-4 right-4 w-80 shadow-lg rounded-lg border bg-white flex flex-col overflow-hidden z-40">
+  <!-- Chat completo: encabezado, mensajes e input -->
+  
+
+    <script>
+  function toggleChat() {
+    const chat = document.getElementById("chatContainer");
+    chat.classList.toggle("hidden");
+  }
+    </script>
+
+  <!-- Header con foto y estado -->
+
+<div class="bg-blue-600 text-white px-4 py-2 flex items-center gap-2">
+  <img src="https://i.postimg.cc/nL5krQXx/image.png"  
+    alt="Ingeniero"
+    class="w-8 h-8 rounded-full border border-white"
+    />
+  <div class="flex flex-col">
+    <span class="font-bold">Asistente Civil</span>
+    <span class="text-sm flex items-center">
+      <span class="w-2 h-2 bg-green-400 rounded-full mr-1 animate-pulse"></span>
+      En línea
+    </span>
+  </div>
+</div>
+
+
+  <!-- Mensajes -->
+  <div id="chatBox" class="flex-1 p-4 space-y-2 h-64 overflow-y-auto bg-gray-50">
+    <!-- Mensajes aparecerán aquí -->
+  </div>
+
+  <!-- Input -->
+  <div class="p-2 border-t bg-white flex">
+    <input
+      id="chatInput"
+      type="text"
+      placeholder="Escribe tu consulta..."
+      class="flex-1 p-2 border rounded-l focus:outline-none"
+    />
+    <button
+      onclick="sendMessage()"
+      class="bg-blue-600 text-white px-4 rounded-r hover:bg-blue-700"
+    >
+      Enviar
+    </button>
+  </div>
+</div>
+
+<script>
+  const respuestas = {
+    elasticidad: "¿Qué es el módulo de elasticidad? Es una propiedad que indica la rigidez de un material y se usa en cálculos estructurales.",
+    carga: "¿Cuál es la diferencia entre carga viva y carga muerta? Carga muerta es el peso permanente (estructura), carga viva es variable (personas, muebles).",
+    zapata: "Para calcular una zapata, necesitas conocer la carga que transmite la columna, el tipo de suelo y la capacidad portante del terreno.",
+    concreto: "La resistencia del concreto a compresión se mide en MPa y se prueba a los 7, 14 y 28 días en cilindros estandarizados.",
+    diagrama: "Un diagrama momento-fuerza-cortante se usa para analizar vigas y columnas, muestra cómo se distribuyen las fuerzas internas.",
+    slump: "El asentamiento del concreto (slump) indica su consistencia. Muy seco no fluye, muy fluido pierde resistencia.",
+    proctor: "La prueba de compactación Proctor determina la humedad óptima para compactar suelos en obra.",
+    seguridad: "El factor de seguridad es una medida que protege contra fallos. En estructuras suele usarse 1.5 a 2.0.",
+    contención: "Un muro de contención resiste empujes de tierra. Debe diseñarse con drenaje adecuado para evitar fallas por presión hidráulica.",
+    pilotes: "En cimentaciones profundas, como pilotes, se transmite la carga a estratos más resistentes que están más profundos.",
+    cimentación: "Los tipos de cimentación dependen del suelo y carga: superficiales (zapata, losa) o profundas (pilotes, pilas).",
+    armado: "¿Qué es el hormigón armado? Es concreto reforzado con varillas de acero que trabajan juntos para resistir tracción y compresión.",
+    granulométrica: "La curva granulométrica muestra la distribución de tamaños en un agregado. Es clave para definir trabajabilidad y resistencia.",
+    planos: "Para interpretar planos, aprende los símbolos técnicos, cortes, escalas, y lee el plano estructural junto al arquitectónico.",
+    aci: "¿Qué son las normas ACI? Son guías de diseño estructural para concreto, muy usadas en ingeniería civil.",
+    losa: "Una losa aligerada reduce peso usando bloques vacíos y concreto en zonas de compresión.",
+    patología: "La patología estructural estudia daños como fisuras, corrosión, asentamientos o fallos en estructuras.",
+    cronograma: "Un cronograma de obra se hace con herramientas como MS Project o diagramas de Gantt, planifica tiempo y recursos.",
+    tensión: "La diferencia entre presión y tensión: la presión es fuerza sobre superficie, la tensión es la fuerza interna en una sección.",
+    topografía: "En topografía, el nivel es un instrumento para medir diferencias de altura. Muy usado en replanteos y estudios de terreno."
+  };
+
+  function getBotReply(msg) {
+    const texto = msg.toLowerCase();
+
+    // Respuestas simples
+    if (texto.includes("hola") || texto.includes("buenas")) {
+      return "¡Hola! ¿En qué puedo ayudarte?";
+    }
+    if (texto.includes("gracias")) {
+      return "¡De nada! 😊";
+    }
+    if (texto.includes("ayuda")) {
+      return "Claro, dime qué necesitas.";
+    }
+    if (texto.includes("quien eres")) {
+      return "Soy un asistente simple hecho con JavaScript.";
+    }
+    if (texto.includes("adios") || texto.includes("chau")) {
+      return "¡Hasta luego! 👋";
+    }
+
+    // Buscar palabras clave en respuestas
+    for (const clave in respuestas) {
+      if (texto.includes(clave)) {
+        return respuestas[clave];
+      }
+    }
+
+    return "No encontré una respuesta exacta. Por favor, intenta reformular la pregunta sobre ingeniería civil.";
+  }
+
+  function sendMessage() {
+    const msg = chatInput.value.trim();
+    if (msg === "") return;
+
+    // Mostrar mensaje del usuario
+    const userMsg = document.createElement("div");
+    userMsg.className = "text-right";
+    userMsg.innerHTML = `<span class="inline-block bg-blue-500 text-white rounded-xl px-3 py-1 max-w-xs">${msg}</span>`;
+    chatBox.appendChild(userMsg);
+
+    // Obtener respuesta
+    const reply = getBotReply(msg);
+
+    // Mostrar respuesta del bot
+    const botMsg = document.createElement("div");
+    botMsg.className = "text-left";
+    botMsg.innerHTML = `<span class="inline-block bg-gray-300 text-black rounded-xl px-3 py-1 max-w-xs">${reply}</span>`;
+    chatBox.appendChild(botMsg);
+
+    // Limitar historial a 10 mensajes
+    while (chatBox.children.length > 10) {
+      chatBox.removeChild(chatBox.firstChild);
+    }
+
+    chatBox.scrollTop = chatBox.scrollHeight;
+    chatInput.value = "";
+  }
+
+  // Enviar mensaje con Enter
+  chatInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") sendMessage();
+  });
+</script>
+
+
+          
+</body>
+</html>
+
+<script>
+  const commentsList = document.getElementById("commentsList");
+  const commentInput = document.getElementById("commentInput");
+
+  function addComment() {
+    const text = commentInput.value.trim();
+    if (text === "") return;
+
+    const comment = document.createElement("div");
+    comment.className = "flex items-start space-x-3";
+
+    comment.innerHTML = `
+      <img src="https://i.postimg.cc/qMrMWJkM/Captura-de-pantalla-2025-05-26-223632.png" alt="Ingeniero" class="w-10 h-10 rounded-full border border-gray-300">
+      <div class="bg-gray-100 p-3 rounded-lg max-w-xl w-full">
+        <div class="text-sm font-medium text-gray-800 mb-1">Ramirez Guiseppe</div>
+        <p class="text-sm text-gray-700 mb-1">${text}</p>
+        <span class="text-xs text-gray-500">Justo ahora</span>
+      </div>
+    `;
+
+    commentsList.prepend(comment);
+    commentInput.value = "";
+  }
+
+  // Enviar con Enter
+  commentInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      addComment();
+    }
+  });
+</script>
+
+
+
+<script>
+  function addComment() {
+    const input = document.getElementById("commentInput");
+    const commentText = input.value.trim();
+
+    if (commentText === "") return;
+
+    const commentDiv = document.createElement("div");
+    commentDiv.className = "flex items-start space-x-3";
+
+    // Crear estructura HTML del comentario
+    const isShort = commentText.length <= 100;
+    commentDiv.innerHTML = `
+      <img src="https://i.postimg.cc/qMrMWJkM/Captura-de-pantalla-2025-05-26-223632.png" alt="Avatar" class="w-10 h-10 rounded-full border border-gray-300">
+      <div class="bg-gray-100 p-3 rounded-lg w-full">
+        <div class="flex items-center justify-between">
+          <p class="text-gray-800 mr-3">${commentText}</p>
+          ${
+            isShort
+              ? `
+              <div class="flex items-center space-x-1">
+                <button class="like-btn hover:scale-125 transition-transform text-xl">😊</button>
+                <span class="like-count text-sm text-gray-600">0</span>
+              </div>`
+              : ""
+          }
+        </div>
+      </div>
+    `;
+
+    // Agregar a la lista
+    document.getElementById("commentsList").appendChild(commentDiv);
+
+    // Limpiar textarea
+    input.value = "";
+
+    // Agregar evento al botón si existe
+    const likeBtn = commentDiv.querySelector(".like-btn");
+    if (likeBtn) {
+      const likeCount = commentDiv.querySelector(".like-count");
+      likeBtn.addEventListener("click", function () {
+        likeBtn.textContent = "✅";
+        likeBtn.disabled = true;
+        let current = parseInt(likeCount.textContent);
+        likeCount.textContent = current + 1;
+      });
+    }
+  }
+</script>
