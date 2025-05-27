@@ -1,0 +1,23 @@
+<style>
+  .bubble {
+    max-width: 75%;
+    padding: 8px 12px;
+    border-radius: 18px;
+    display: inline-block;
+  }
+  .from-user {
+    background-color: #e2e8f0;
+    align-self: flex-end;
+  }
+  .from-bot {
+    background-color: #fde68a;
+    align-self: flex-start;
+  }
+</style>
+
+
+<style>
+  #chatBox div {
+    margin-bottom: 5px;
+  }
+</style>
